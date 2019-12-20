@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Website and Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Media Queries -->
+    <style>
+        /* when the width of the device is less than 786px */
+        @media screen and (max-width: 786px) {
+            /* Making the nav-bar responsive */
+            #nav-bar a {
+                display: none;
+            }
+            #nav-bar a.icon {
+                float: right;
+                display: block;
+            }
+
+            /* when the screen size is greater than 786px it adds the rensponsive class */
+            #nav-bar.responsive {
+                width: 100%;
+                height: 250px;
+                /* background-color: brown; */
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                z-index: 100;
+
+            }
+            #nav-bar.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            #nav-bar.responsive a:not(:last-child){
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+            }
+
+            /* Header */
+            #header {
+                height: 85px;
+            }
+            #header #nav-bar {
+                display: flex;
+                justify-content: flex-end;
+                padding: 0;
+            }
+            #header .logo {
+                margin: 0;
+            }
+            #header .logo p {
+                display: block;
+                font-size: 42px;
+                margin: 0.4em auto;
+            }
+
+            /* services offered */
+            .flex-container {
+                display: flex;
+                flex-direction: column;
+            }
+            .flex-container > .flex-item {
+                width: 100%;
+            }
+
+            /* skills */
+            .article {
+                display: flex;
+                flex-direction: column;
+            }
+            .article > div {
+                width: 100%;
+            } 
+            /* My Skills */
+            .my-skills {
+                display: flex;
+                flex-direction: row;
+            }
+            .my-skills > div {
+                width: 100%;
+            }
+
+            /* footer */
+            #footer {
+                
+            }
+        }
+
+         /* when the screen size is less than 590px  */
+         @media screen and (max-width: 590px) {
+            /* My Skills */
+            .my-skills {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .my-skills > div > li{
+                width: 100%;
+            }
+        }
+        /* when the screen size is greater than 786px  */
+        @media screen and (min-width: 786px) {
+            /* prevent icon from displaying */
+            #nav-bar a.icon {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <header id="header">
+        <div class="logo">
+            <!-- <img src="images/toUpload.jpg" alt="Logo"> -->
+            <p class="display-3">AGA</p>
+        </div>
+        <nav id="nav-bar" class="nav-bar">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="javascript:void(0);" class="icon">
+                <i class="fas fa-bars fa-3x"></i>
+              </a>
+        </nav>
+    </header>
+    <section id="cover">
+        <div class="content">
+           <div id="me">
+                <h1>Ayeah Godlove Akoni </h1>
+                <p>Full-Stack Web Developer (Mobile Web Specialist)</p>
+                <hr>
+                <p class="w-50 mx-auto mb-4">I design and build responsive mobile first websites and applications for individuals and small businesses.</p>
+                <button class="btn btn-teal ">I need a website</button>
+                <button class="btn btn-outline-danger">I'm looking to hire</button>
+           </div>
+        </div>
+    </section>
+
+    <section class="wrapper">
+        <div class=" mt-5 py-5">
+            <h3 class="text-center font">Services I Offer</h3>
+            <p class="text-center">These are the most common and major services I do offer to my clients. There are more of such services anyway...</p>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">
+                <img src="images/Responsive-Web-design.png" class="img-fluid" alt="Responsive-Web-design">
+                <div class="card-body">
+                    <h4 class="card-text">Frontend Web Development</h4>
+                    <p>Building mobile responsive websites with the latest technologies</p>
+                    <a href="portfolio.html" class="card-link btn btn-info">Learn more</a>
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src="images/backend.jpg" class="img-fluid" alt="Progressive Web Applications">
+                <div class="card-body">
+                    <h4 class="card-text">Backend Web Developement</h4>
+                    <p>Creation strong logic for functionality using server side technologies and frameworks.</p>
+                    <a href="portfolio.html" class="card-link btn btn-info">Learn more</a>
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src="images/yyy.png" class="img-fluid" alt="Progressive Web Applications">
+                <div class="card-body">
+                    <h4 class="card-text">Progressive Web Applications</h4>
+                    <p>Transform your pages, websites to appear to users in the same way as native or mobile applications.</p>
+                    <a href="portfolio.html" class="card-link btn btn-info">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills -->
+    <section>
+        <div class="skills mb-0 bg-light">
+            <div class="article py-5 my-5 d-flex align-items-center px-5">
+               <div class="info mr-2">
+                    <h1 class="text-left ">I also teach <i class="fas fa-home"></i></h1>
+                    <p class="lead text-dark">As much as knowledge gives me a descent life, it is also meant to be shared with people like you. With the skills I have developed over time, it is worthy enough to share with those who are willing to learn and contribute to society.</p>
+                    <p class="display-4 ">My skillset is as follows <i class="fas fa-arrow-circle-right pb-0 text-danger"></i></p>
+               </div>
+                <section class="d-flex my-skills">
+                    <div class="list-group text-secondary w-50 mr-2">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">HTML 5 <span class="badge badge-light text-success">Advance</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">CSS 3 <span class="badge badge-light text-success">Advanced</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">JavaScript <span class="badge badge-light text-success">Advanced</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">PHP <span class="badge badge-light text-success">Advanced</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">MYSQL <span class="badge badge-light text-success">Advanced</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Bootstrap 4 <span class="badge badge-light text-success">Advanced</span></li>
+                    </div>
+                    <div class="list-group text-secondary w-50">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">C/C++ <span class="badge badge-light text-warning">Intermediate</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Python <span class="badge badge-light text-primary">Beginner</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Java <span class="badge badge-light text-primary">Beginner</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Angular <span class="badge badge-light text-primary">Beginner</span></li>
+                    </div>
+                </section>
+            </div>
+            <div id="btn-learn">
+                <a class="btn btn-danger  ml-5 mb-3" href="">Start learning now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer id="footer">
+        <div class="flex-container">
+            <div class="flex-container">
+                <!-- About information -->
+                <div class="item text-white">
+                    <div class="header">
+                        <h4>AGA</h4>
+                        <p>Together let's make the world a better place</p>
+                    </div>
+                    <ul>
+                        <li>Front End developement</li>
+                        <li>Back End Developement </li>
+                        <li>SEO</li>
+                        <li>Progressive Web Apps</li>
+                        <li>Digital Marketing</li>
+                    </ul>
+                </div>
+            <!-- Contact Information -->
+            <div class="item text-white">
+                <div class="header">
+                    <h4>Contact</h4>
+                </div>
+                <ul>
+                    <li>Website: <a href="https://ayeahgodlove.github.io/" target="_blank">https://ayeahgodlove.github.io/</a></li>
+                    <li>Email:  <a href="mailto:ayeahgodlove5@gmail.com">ayeahgodlove5@gmail.com</a></li>
+                    <li> <i class="fas fa-phone-square-alt fa-2x"></i> <b style="font-size: 16px;"> (+237) 673-687-549</b></li>
+                    <li>P.O Box 0909, Mile III Nkwen</li>
+                    <li>Bamenda Cameroon</li>
+                </ul>
+            </div>
+             <!-- Social media Icons -->
+             <div class="item text-white">
+                <div class="header">
+                    <h4>Follow Me</h4>
+                </div>
+                <ul id="social-media-icon">
+                    <li><a href=""><i class="fab fa-github fa-2x text-danger"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter fa-2x text-danger"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in fa-2x text-danger"></i></a></li>
+                    <li><a href=""><i class="fab fa-whatsapp fa-2x text-danger"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook fa-2x text-danger"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram fa-2x text-danger"></i></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- scripts -->
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/5602556044.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
