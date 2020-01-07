@@ -4,115 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Personal Website and Portfolio</title>
+    <title>Personal Website and Portfolio - Ayeah G. Akoni</title>
+    <meta name="description" content="My Personal Website and Portfolio, I develope Responisive websites and Web applications and PWAs that 'behave just like native mobile apps'">
+    <meta name="author" content="AyeahGodloveAkoni">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- Media Queries -->
-    <style>
-        /* when the width of the device is less than 786px */
-        @media screen and (max-width: 786px) {
-            /* Making the nav-bar responsive */
-            #nav-bar a {
-                display: none;
-            }
-            #nav-bar a.icon {
-                float: right;
-                display: block;
-            }
-
-            /* when the screen size is greater than 786px it adds the rensponsive class */
-            #nav-bar.responsive {
-                width: 100%;
-                height: 250px;
-                /* background-color: brown; */
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                z-index: 100;
-
-            }
-            #nav-bar.responsive a.icon {
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-            #nav-bar.responsive a:not(:last-child){
-                float: none;
-                display: block;
-                text-align: left;
-                width: 100%;
-            }
-
-            /* Header */
-            #header {
-                height: 85px;
-            }
-            #header #nav-bar {
-                display: flex;
-                justify-content: flex-end;
-                padding: 0;
-            }
-            #header .logo {
-                margin: 0;
-            }
-            #header .logo p {
-                display: block;
-                font-size: 42px;
-                margin: 0.4em auto;
-            }
-
-            /* services offered */
-            .flex-container {
-                display: flex;
-                flex-direction: column;
-            }
-            .flex-container > .flex-item {
-                width: 100%;
-            }
-
-            /* skills */
-            .article {
-                display: flex;
-                flex-direction: column;
-            }
-            .article > div {
-                width: 100%;
-            } 
-            /* My Skills */
-            .my-skills {
-                display: flex;
-                flex-direction: row;
-            }
-            .my-skills > div {
-                width: 100%;
-            }
-
-            /* footer */
-            #footer {
-                
-            }
-        }
-
-         /* when the screen size is less than 590px  */
-         @media screen and (max-width: 590px) {
-            /* My Skills */
-            .my-skills {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-            }
-            .my-skills > div > li{
-                width: 100%;
-            }
-        }
-        /* when the screen size is greater than 786px  */
-        @media screen and (min-width: 786px) {
-            /* prevent icon from displaying */
-            #nav-bar a.icon {
-                display: none;
-            }
-        }
-    </style>
 </head>
 <body class="container-fluid">
     <header id="header">
