@@ -211,6 +211,13 @@
         display: block;
     }
 
+    /* #me */
+    #me h1 {
+        font-size: 28px;
+    }
+    #me p {
+        font-size: 20px;
+    }
 
     /* when the screen size is less than 786px it adds the rensponsive class */
     #nav-bar.responsive {
