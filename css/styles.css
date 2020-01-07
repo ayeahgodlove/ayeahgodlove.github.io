@@ -196,6 +196,11 @@
 /* Media Queries */
   /* when the width of the device is less than 786px */
   @media screen and (max-width: 786px) {
+      /* wrapper class */
+      .wrapper { 
+        padding: 0;
+        margin: 0;
+    }
     /* Making the nav-bar responsive */
     #nav-bar a {
         display: none;
@@ -210,7 +215,7 @@
     #nav-bar.responsive {
         width: 100%;
         height: 250px;
-        /* background-color: brown; */
+        background-color: rgb(1, 16, 20);
         position: relative;
         display: flex;
         flex-direction: column;
