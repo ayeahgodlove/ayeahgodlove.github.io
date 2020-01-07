@@ -170,7 +170,6 @@
 }
 .flex-container > .item {
     width: 400px;
-    padding-left: 2em;
     margin-top: 0.6em;
     margin-bottom: 0.976em;
     font-family:'Titillium Web', sans-serif;
@@ -257,6 +256,16 @@
     }
     .flex-container > .flex-item {
         width: 100%;
+    }
+
+    .flex-container > .item {
+        text-align: center;
+    }
+
+    /* btn-learn */
+    #btn-learn {
+        display: inline-block;
+        margin: 0 auto;
     }
 
     /* skills */
